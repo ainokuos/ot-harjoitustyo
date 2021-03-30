@@ -8,7 +8,7 @@
 
 ## *Viikko2*
 
-(https://github.com/ainokuos/ot-harjoitustyo/blob/master/laskarit/testikattavuus.png)
+
 
 
 
