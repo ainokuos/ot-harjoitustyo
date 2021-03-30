@@ -10,6 +10,10 @@
 
 [testikattavuus.png](https://github.com/ainokuos/ot-harjoitustyo/blob/master/laskarit/viikko2/testikattavuus.png)
 
+## Dokumentaatio
+
+[Työaikakirjanpito](https://github.com/ainokuos/ot-harjoitustyo/blob/master/dokumentaatio/Työaikakirjanpito.md)
+
 
 
 
