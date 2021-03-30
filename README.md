@@ -4,11 +4,11 @@
 
 [gitlog.txt](https://github.com/ainokuos/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
 
-[komentorivi.txt](https://github.com/ainokuos/ot-harjoitustyo/blob/master/laskarit/komentorivi.txt)
+[komentorivi.txt](https://github.com/ainokuos/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
 ### *Viikko2*
 
-[testikattavuus.png](https://github.com/ainokuos/ot-harjoitusty/blob/master/laskarit/viikko2/testikattavuus.png)
+[testikattavuus.png](https://github.com/ainokuos/ot-harjoitustyo/blob/master/laskarit/viikko2/testikattavuus.png)
 
 
 
