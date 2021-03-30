@@ -8,5 +8,5 @@ Sovelluksen avulla käyttäjä voi pitää kirjaa omista opintosuorituksistaan.
 Sovelluksessa on vain yksikäyttäjä rooli, jolla näkee omat suorituksensa.
 
 ### Toiminnallisuus
-  -kättäjä voi merkitä omia suorituksiaan
+  - Käyttäjä voi merkitä omia suorituksiaan
 
