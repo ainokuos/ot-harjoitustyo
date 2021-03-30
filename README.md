@@ -12,6 +12,8 @@
 
 ## Dokumentaatio
 
+[Vaatimusmäärittely](https://github.com/ainokuos/ot-harjoitustyo/edit/master/dokumentaatio/Vaatimusmäärittely.md)
+
 [Työaikakirjanpito](https://github.com/ainokuos/ot-harjoitustyo/blob/master/dokumentaatio/Työaikakirjanpito.md)
 
 
