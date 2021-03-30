@@ -6,7 +6,6 @@
 
 [komentorivi.txt](https://github.com/ainokuos/ot-harjoitustyo/blob/master/laskarit/komentorivi.txt)
 
-##" *Viikko2*
 
 
 
