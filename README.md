@@ -4,5 +4,5 @@
 
 [gitlog.txt](https://github.com/ainokuos/ot-harjoitustyo/blob/master/laskarit/gitlog.txt)
 
-[komentorivi.txt](https://github.com/ainokuos/ot-harjoitustyo/files/6192634/komentorivi.txt)
+[komentorivi.txt](https://github.com/ainokuos/ot-harjoitustyo/blob/master/laskarit/komentorivi.txt)
 
