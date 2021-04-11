@@ -1,14 +1,6 @@
 # **OT-Harjoitustyö**
-## Laskarit
-### *Viikko 1*
-
-[gitlog.txt](https://github.com/ainokuos/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
-
-[komentorivi.txt](https://github.com/ainokuos/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
-
-### *Viikko2*
-
-[testikattavuus.png](https://github.com/ainokuos/ot-harjoitustyo/blob/master/laskarit/viikko2/testikattavuus.png)
+## Opintoseuraaja
+Sovelluksen avulla käyttäjällä on mahdollista pitää kirjaa omista opinto suorituksistaan sekä opintomenestyksestä. 
 
 ## Dokumentaatio
 
@@ -16,6 +8,7 @@
 
 [Työaikakirjanpito](https://github.com/ainokuos/ot-harjoitustyo/blob/master/dokumentaatio/Työaikakirjanpito.md)
 
+## Asennus
 
 
 
