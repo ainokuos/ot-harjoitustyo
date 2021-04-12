@@ -1,10 +1,9 @@
-from tkinter import  ttk, constants
+from tkinter import ttk, constants
 
-class LoginView:
-	def __init__ (self, root, handle_user, handle_create):
+class CreateView:
+	def __init__(self, root, handle_login):
 		self._root = root
-		self._handle_user = handle_user
-		self._handle_create = handle_create
+		self._handle_login = handle_login
 		self._frame = None
 
 		self._initialize()
@@ -17,7 +16,6 @@ class LoginView:
 
 	def _initialize(self):
 		self._frame = ttk.Frame(master = self._root)
-		label = ttk.Label(master = self._frame, text = "Kirjaudu sisään")
 
 		username_label = ttk.Label(master = self._frame, text = "Käyttäjätunnus")
 		username_entry = ttk.Entry(master = self._frame)
@@ -25,11 +23,7 @@ class LoginView:
 		password_label = ttk.Label(master = self._frame, text = "Salasana")
 		password_entry = ttk.Entry(master = self._frame)
 
-		button = ttk.Button(master = self._frame, text = "Kirjaudu", command = self._handle_user)
-
-		create = ttk.Button(master = self._frame, text = "Luo tunnus", command = self._handle_create)
-
-		label.grid(row = 0, column = 0)
+		create = ttk.Button(master = self._frame, text = "Luo", command = self._handle_login)
 
 		username_label.grid(row = 1, column = 0)
 		username_entry.grid(row = 1, column = 1)
@@ -37,6 +31,5 @@ class LoginView:
 		password_label.grid(row = 2, column = 0)
 		password_entry.grid(row = 2, column = 1)
 
-		button.grid(row = 3, column = 0)
-		create.grid(row = 4, column = 0)
+		create.grid(row = 3, column = 0)
 

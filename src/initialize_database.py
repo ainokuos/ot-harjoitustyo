@@ -4,7 +4,7 @@ from database_connection import get_database_connection
 def drop_tables(connection):
 	cursor = connection.cursor()
 
-	cursor.execute(''' drop table if exists mytable ''')
+	cursor.execute(''' drop table if exists users ''')
 
 	connection.commit()
 
@@ -12,7 +12,7 @@ def drop_tables(connection):
 def create_tables(connection):
 	cursor = connection.cursor()
 
-	cursor.execute(''' create table mytable (id text primary key, mycolumn text);'''))
+	cursor.execute(''' create table users (username text primary key, password text);'''))
 
 	connection.commit()
 
