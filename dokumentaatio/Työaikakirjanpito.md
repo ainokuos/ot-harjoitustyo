@@ -9,3 +9,4 @@
 10.4.|2|Tutustuminen tietokannan hyödyntämiseen
 11.4.|2|Tallennus tietokantaan
 12.4.|4|Tallennus tietokantaan
+12.4|1|Käyttöliittymän laajennus
