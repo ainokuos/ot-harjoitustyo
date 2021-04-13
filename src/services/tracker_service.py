@@ -27,10 +27,11 @@ class TrackerService:
 	def create_user(self, username, password):
 		existing_user = self._user_repository.find_by_username(username)
 
+		if existing_user:
+			return False
 
 		user = self._user_repository.create(User(username, password))
 
-
-		return user
+		return True
 
 tracker_service = TrackerService()

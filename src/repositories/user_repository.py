@@ -11,10 +11,7 @@ class UserRepository:
 	def create(self, user):
 		cursor = self._connection.cursor()
 
-		try:
-			cursor.execute(" insert into users (username, password) values (?, ?)", (user.username, user.password)) 
-		except sqlite3.IntegrityError:
-			raise IntegrityError
+		cursor.execute(" insert into users (username, password) values (?, ?)", (user.username, user.password))
 
 		self._connection.commit()
 
@@ -36,6 +33,6 @@ class UserRepository:
 
 		rows = cursor.fetchall()
 
-		return list(map(get_users_by_row, rows))
+		return list(map(get_user_by_row, rows))
 
 user_repository = UserRepository(get_database_connection())

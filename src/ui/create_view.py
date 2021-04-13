@@ -1,4 +1,4 @@
-from tkinter import ttk, constants
+from tkinter import ttk, constants, StringVar
 from services.tracker_service import tracker_service
 
 class CreateView:
@@ -25,11 +25,15 @@ class CreateView:
 		username = self._username_entry.get()
 		password = self._password_entry.get()
 
-		try:
-			tracker_service.create_user(username, password)
-			self._handle_login()
-		except IntegrityError:
-			self._show_error(f"Käyttäjänimi {username} on jo käytössä")
+		if len(username) == 0 or len(password) == 0:
+			self._show_error("Anna käyttäjätunnus ja salasana")
+
+		else:
+
+			if tracker_service.create_user(username, password) == True:
+				self._handle_login()
+			else:
+				self._show_error(f"Käyttäjänimi {username} on jo käytössä")
 
 	def _show_error(self, message):
 		self._error_variable.set(message)
@@ -57,6 +61,7 @@ class CreateView:
 
 		create = ttk.Button(master = self._frame, text = "Luo", command = self._create_user_handler)
 
+		self._error_variable = StringVar(self._frame)
 		self._error_label = ttk.Label(master = self._frame, textvariable = self._error_variable)
 
 
