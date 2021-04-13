@@ -10,3 +10,5 @@
 11.4.|2|Tallennus tietokantaan
 12.4.|4|Tallennus tietokantaan
 12.4|1|Käyttöliittymän laajennus
+13.4.|4|Käyttäjänluonti ja kirjautuminen
+13.4.|1|Testaus
