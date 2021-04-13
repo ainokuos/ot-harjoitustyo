@@ -5,7 +5,7 @@ description = ""
 authors = ["Aino Kuosmanen <aino.kuosmanen@helsinki.fi>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.6"
 invoke = "^1.5.0"
 pytest = "^6.2.3"
 python-dotenv = "^0.17.0"
