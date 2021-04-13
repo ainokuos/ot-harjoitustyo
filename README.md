@@ -10,6 +10,24 @@ Sovelluksen avulla käyttäjällä on mahdollista pitää kirjaa omista opinto s
 
 ## Asennus
 
+Asenna riippuvuudet komennolla:
+poetry install
 
+Alusta sovellus komennolla:
+poetry run invoke build
+
+Käynnistä sovellus komennolla:
+poetry run invoke start
+
+## Komentorivi
+
+Testaukset voi suorittaa komennolla:
+poetry run invoke test
+
+Testikattavuuden voi tarkistaa komennolla:
+poetry run invoke coverage
+
+Testikattavuusraportin saa komennolla:
+poetry run invoke coverage_raport
 
 
