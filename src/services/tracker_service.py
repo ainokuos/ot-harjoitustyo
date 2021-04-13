@@ -1,19 +1,18 @@
 from entities.user import User
+from repositories.user_repository import user_repository
+
 
 
 class TrackerService:
 
-	def __init__(self, user_repository):
+	def __init__(self):
 
 		self.user = None
 		self._user_repository = user_repository
 
 	def login(self, username, password):
 
-		user = self._user_reposiroty.find_by_username(username)
-
-		if not user or user.password != password:
-			raise InvalidCredentialsError("Invalid username or password")
+		user = self._user_repository.find_by_username(username)
 
 		self._user = user
 
@@ -22,15 +21,16 @@ class TrackerService:
 	def logout(self):
 		self._user = None
 
-	def create_user(self, username, password, login = True):
+	def get_users(self):
+		return self._user_repository.find_all()
+
+	def create_user(self, username, password):
 		existing_user = self._user_repository.find_by_username(username)
 
-		if existind_user:
-			raise UsernameExistError(f"Username {username} already exists")
 
 		user = self._user_repository.create(User(username, password))
 
-		if login:
-			self._user = user
 
 		return user
+
+tracker_service = TrackerService()
