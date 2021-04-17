@@ -8,6 +8,7 @@ authors = ["Aino Kuosmanen <aino.kuosmanen@helsinki.fi>"]
 python = "^3.6"
 
 [tool.poetry.dev-dependencies]
+pylint = "^2.7.4"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

@@ -5,33 +5,35 @@ from repositories.user_repository import user_repository
 
 class TrackerService:
 
-	def __init__(self):
+    def __init__(self):
+        self.user = None
+        self._user_repository = user_repository
 
-		self.user = None
-		self._user_repository = user_repository
+    def login(self, username, password):
 
-	def login(self, username, password):
+        user = self._user_repository.find_by_username(username)
 
-		user = self._user_repository.find_by_username(username)
+        if not user or user.password != password:
+            return False
 
-		self._user = user
+        self._user = user
 
-		return user
+        return True
 
-	def logout(self):
-		self._user = None
+    def logout(self):
+        self._user = None
 
-	def get_users(self):
-		return self._user_repository.find_all()
+    def get_users(self):
+        return self._user_repository.find_all()
 
-	def create_user(self, username, password):
-		existing_user = self._user_repository.find_by_username(username)
+    def create_user(self, username, password):
+        existing_user = self._user_repository.find_by_username(username)
 
-		if existing_user:
-			return False
+        if existing_user:
+            return False
 
-		user = self._user_repository.create(User(username, password))
+        user = self._user_repository.create(User(username, password))
 
-		return True
+        return True
 
 tracker_service = TrackerService()
