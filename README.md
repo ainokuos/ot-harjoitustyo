@@ -17,21 +17,27 @@ Sovelluksen avulla käyttäjällä on mahdollista pitää kirjaa omista opinto s
 poetry install
 ```
 
-2. Alusta sovellus komennolla
+2. Alusta sovellus komennolla:
+```
 poetry run invoke build
+```
 
-Käynnistä sovellus komennolla:
+3.Käynnistä sovellus komennolla:
+```
 poetry run invoke start
-
+```
 ## Komentorivi
 
 Testaukset voi suorittaa komennolla:
+```
 poetry run invoke test
-
+```
 Testikattavuuden voi tarkistaa komennolla:
+```
 poetry run invoke coverage
-
+```
 Testikattavuusraportin saa komennolla:
+```
 poetry run invoke coverage_raport
-
+```
 
