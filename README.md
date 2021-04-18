@@ -15,7 +15,7 @@ Sovelluksen avulla käyttäjällä on mahdollista pitää kirjaa omista opinto s
 Asenna riippuvuudet komennolla:
 
 ''' bash
-poetry install
+  poetry install
 '''
 
 Alusta sovellus komennolla:
