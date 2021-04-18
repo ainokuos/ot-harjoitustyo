@@ -1,3 +1,3 @@
 [run]
 source = src
-omit = src/repositories/**, src/services/**
+omit = src/tests/**, src/ui/**, src/index.py, laskarit
