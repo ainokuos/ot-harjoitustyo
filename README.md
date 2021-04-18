@@ -14,7 +14,9 @@ Sovelluksen avulla käyttäjällä on mahdollista pitää kirjaa omista opinto s
 
 Asenna riippuvuudet komennolla:
 
-'''poetry install,,,
+''' bash
+poetry install
+'''
 
 Alusta sovellus komennolla:
 poetry run invoke build
