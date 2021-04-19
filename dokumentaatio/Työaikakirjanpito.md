@@ -15,4 +15,6 @@
 17.4|1|Arkkitehtuurikuvaus
 17.4|1|Testaus
 18.4|2|Suoritusten luominen ja tallentaminen
+19.4|2|Käyttöliittymän laajentaminen
+19.4|3|Suoritusten lisääminen ja tallennus tiedostoon
 yht:||
