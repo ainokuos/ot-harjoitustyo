@@ -1,4 +1,5 @@
 from tkinter import ttk, constants
+from services.tracker_service import tracker_service
 
 class UserView:
 
@@ -16,6 +17,11 @@ class UserView:
     def destroy(self):
         self._frame.destroy()
 
+    def _initialize_note(self, note, r):
+        note_label = ttk.Label(master = self._frame, text = note.name)
+
+        note_label.grid(row = r, column = 0)
+
     def _initialize(self):
         self._frame = ttk.Frame(master = self._root)
         label = ttk.Label(master = self._frame, text = "Tervetuloa")
@@ -23,9 +29,17 @@ class UserView:
         add = ttk.Button(master = self._frame, text = "Lisää suoritus", command = self._handle_add)
 
         logout = ttk.Button(master = self._frame, text = "Kirjaudu ulos", command = self._handle_login)
+        notes = tracker_service.get_notes()
+        r = 5
+        for note in notes:
+            if note.username == tracker_service.user.username:
+                self._initialize_note(note, r)
+                r+=1
 
         label.grid(row = 0, column = 1)
         add.grid(row = 1, column = 1)
         logout.grid(row = 2, column = 1)
+      
+
 
 

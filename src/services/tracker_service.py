@@ -1,5 +1,7 @@
 from entities.user import User
+from entities.note import Note
 from repositories.user_repository import user_repository
+from repositories.note_repository import note_repository
 
 
 
@@ -16,12 +18,12 @@ class TrackerService:
         if not user or user.password != password:
             return False
 
-        self._user = user
+        self.user = user
 
         return True
 
     def logout(self):
-        self._user = None
+        self.user = None
 
     def get_users(self):
         return self._user_repository.find_all()
@@ -36,4 +38,11 @@ class TrackerService:
 
         return True
 
+    def create_note(self, name, cr, grade):
+        note = Note(name, cr, grade, self.user.username)
+        note_repository.create(note)
+    
+    def get_notes(self):
+        return note_repository.find_all()
+        
 tracker_service = TrackerService()
