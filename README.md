@@ -38,6 +38,6 @@ poetry run invoke coverage
 ```
 Testikattavuusraportin saa komennolla:
 ```
-poetry run invoke coverage_report
+poetry run invoke coverage-report
 ```
 
