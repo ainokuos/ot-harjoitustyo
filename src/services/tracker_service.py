@@ -44,5 +44,8 @@ class TrackerService:
     
     def get_notes(self):
         return note_repository.find_all()
+    
+    def delete_notes(self):
+        note_repository.delete_all()
         
 tracker_service = TrackerService()

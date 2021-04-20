@@ -34,5 +34,12 @@ class UserRepository:
         rows = cursor.fetchall()
 
         return list(map(get_user_by_row, rows))
+    
+    def delete_all(self):
+        cursor = self._connection.cursor()
+
+        cursor.execute("delete from users")
+
+        self._connection.commit()
 
 user_repository = UserRepository(get_database_connection())

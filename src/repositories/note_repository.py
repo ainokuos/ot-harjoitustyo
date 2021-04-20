@@ -42,12 +42,17 @@ class NoteRepository:
         notes = self.find_all()
         notes.append(note)
         self._write(notes)
-        for note in notes:
-            print(note.name, note.username)
         return note 
         
     def find_all(self):
         return self._read()
+    
+    def delete_all(self):
+        self._ensure_file_exists()
+
+        with open(self._file_path, "w") as file:
+            file.write("")
+
         
       
 
