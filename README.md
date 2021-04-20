@@ -40,4 +40,7 @@ Testikattavuusraportin saa komennolla:
 ```
 poetry run invoke coverage-report
 ```
-
+Laatutarkistuksen voi suorittaa komennolla:
+```
+poetry run invoke lint
+```
