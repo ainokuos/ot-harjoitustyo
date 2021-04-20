@@ -8,9 +8,11 @@ authors = ["Aino Kuosmanen <aino.kuosmanen@helsinki.fi>"]
 python = "^3.6"
 invoke = "^1.5.0"
 python-dotenv = "^0.17.0"
+pytest-dotenv = "^0.5.2"
 
 [tool.poetry.dev-dependencies]
 pylint = "^2.7.4"
+pytest-dotenv = "^0.5.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
