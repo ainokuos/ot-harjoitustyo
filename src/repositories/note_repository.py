@@ -52,6 +52,15 @@ class NoteRepository:
 
         with open(self._file_path, "w") as file:
             file.write("")
+    
+    def delete_one(self, note):
+        notes = self.find_all()
+        for i in range(0, len(notes)):
+            if note.name == notes[i].name and note.username == notes[i].username:
+                notes.pop(i)
+        
+        self._write(notes)
+                
 
         
       

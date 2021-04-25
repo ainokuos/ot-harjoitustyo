@@ -43,7 +43,7 @@ class CreateView:
         self._error_label.grid_remove()
 
     def _initialize_frames(self):
-        username_label = ttk.Label(master = self._frame, text = "Käyttäjätunnut")
+        username_label = ttk.Label(master = self._frame, text = "Käyttäjätunnus")
         self._username_entry = ttk.Entry(master = self._frame)
 
         password_label = ttk.Label(master = self._frame, text = "Salasana")

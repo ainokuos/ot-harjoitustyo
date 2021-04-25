@@ -36,6 +36,27 @@ class AddView:
 
         except ValueError:
             self._show_error("Anna opintopisteet ja arvosana numerona")
+    
+    def _initialize_notes(self):
+        notes = tracker_service.get_notes()
+        r = 5
+        for note in notes:
+            self._initialize_note(note, r)
+            r += 1
+    
+    def _initialize_note(self,note, r):
+        note_name = ttk.Label(master = self._frame, text = note.name)
+        note_delete = ttk.Button(master = self._frame, text = "Poista", command = lambda: self._handle_delete(note))
+
+        note_name.grid(row = r, column = 0)
+        note_delete.grid(row = r, column = 1)
+    
+    def _handle_delete(self, note):
+        tracker_service.delete_note(note)
+        self._handle_user()
+
+        
+        
         
        
     def _initialize_add_fields(self):
@@ -80,5 +101,6 @@ class AddView:
         self._error_label.grid(row = 4, column = 2)
 
         self._initialize_add_fields()
+        self._initialize_notes()
         self._hide_error()
 

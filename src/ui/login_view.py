@@ -41,7 +41,7 @@ class LoginView:
 
 
     def _initialize_fields(self):
-        username_label = ttk.Label(master = self._frame, text = "Käyttäjätunnut")
+        username_label = ttk.Label(master = self._frame, text = "Käyttäjätunnus")
         password_label = ttk.Label(master = self._frame, text = "Salasana")
 
         self._username_entry = ttk.Entry(master = self._frame)

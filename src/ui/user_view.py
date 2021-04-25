@@ -16,6 +16,14 @@ class UserView:
 
     def destroy(self):
         self._frame.destroy()
+    
+    def _initialize_notes(self):
+        notes = tracker_service.get_notes()
+        r=5
+        for note in notes:
+            if note.username == tracker_service.user.username:
+                self._initialize_note(note, r)
+                r+=1
 
     def _initialize_note(self, note, r):
         note_label = ttk.Label(master = self._frame, text = note.name)
@@ -26,6 +34,7 @@ class UserView:
         note_points.grid(row = r, column = 1)
         note_grade.grid(row = r, column = 2)
 
+
     def _initialize(self):
         self._frame = ttk.Frame(master = self._root)
         label = ttk.Label(master = self._frame, text = "Tervetuloa")
@@ -33,16 +42,17 @@ class UserView:
         add = ttk.Button(master = self._frame, text = "Lisää suoritus", command = self._handle_add)
 
         logout = ttk.Button(master = self._frame, text = "Kirjaudu ulos", command = self._handle_login)
-        notes = tracker_service.get_notes()
-        r=5
-        for note in notes:
-            if note.username == tracker_service.user.username:
-                self._initialize_note(note, r)
-                r+=1
+
+        total = ttk.Label(master = self._frame, text = "Opintopisteet:" + str(tracker_service.get_sum()))
+        average = ttk.Label(master = self._frame, text = f"Keskiarvo:{tracker_service.get_average()}")
+
+        self._initialize_notes()
 
         label.grid(row = 0, column = 1)
         add.grid(row = 1, column = 1)
         logout.grid(row = 1, column = 3)
+        total.grid(row = 2, column = 1)
+        average.grid(row = 2, column = 2)
       
 
 

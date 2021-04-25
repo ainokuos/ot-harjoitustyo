@@ -49,9 +49,26 @@ class TrackerService:
         notes = self.get_notes()
         points = 0
         for note in notes:
-            points += note.cr
+            if note.username == self.user.username:
+                points += int(note.cr)
         return points
-            
+    
+    def get_average(self):
+        notes = self.get_notes()
+        grades = 0
+        total = 0
+        for note in notes:
+            if note.username == self.user.username:
+                grades += int(note.grade)
+                total +=1
+        if total > 0:
+            return f"{(grades/total):.2F}"
+        return 0
+    
+    def delete_note(self, note):
+        note_repository.delete_one(note)
+        
+
 
     
     def delete_notes(self):
