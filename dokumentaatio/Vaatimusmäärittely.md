@@ -9,7 +9,8 @@ Sovelluksessa on vain yksikäyttäjä rooli, jolla näkee omat suorituksensa.
 
 ### Toiminnallisuus
   - [x] Käyttäjä voi kirjautua sisään 
-  - [x] Käyttäjä voi merkitä omia suorituksiaan
+  - [x] Käyttäjä voi lisätä suorituksia
+  - [x] Kättäjä voi poistaa suorituksia
   - [x] Sovellus pitää kirjaa keskiarvosta ja suoritetuista opintopisteistä
   - [ ] Sovellus seuraa vuosittaista opintopistetavoitetta
 
