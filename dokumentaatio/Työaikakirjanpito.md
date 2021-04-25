@@ -18,4 +18,6 @@
 19.4.|2|Käyttöliittymän laajentaminen
 19.4.|3|Suoritusten lisääminen ja tallennus tiedostoon
 20.4.|2|Testaus
+21.4.|1|Käyttöliittymän laajennus
+22.4.
 yht:||
