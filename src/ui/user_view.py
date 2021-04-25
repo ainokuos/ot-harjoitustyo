@@ -19,8 +19,12 @@ class UserView:
 
     def _initialize_note(self, note, r):
         note_label = ttk.Label(master = self._frame, text = note.name)
+        note_points = ttk.Label(master = self._frame, text = note.cr)
+        note_grade = ttk.Label(master = self._frame, text = note.grade)
 
         note_label.grid(row = r, column = 0)
+        note_points.grid(row = r, column = 1)
+        note_grade.grid(row = r, column = 2)
 
     def _initialize(self):
         self._frame = ttk.Frame(master = self._root)
@@ -30,7 +34,7 @@ class UserView:
 
         logout = ttk.Button(master = self._frame, text = "Kirjaudu ulos", command = self._handle_login)
         notes = tracker_service.get_notes()
-        r = 5
+        r=5
         for note in notes:
             if note.username == tracker_service.user.username:
                 self._initialize_note(note, r)
@@ -38,7 +42,7 @@ class UserView:
 
         label.grid(row = 0, column = 1)
         add.grid(row = 1, column = 1)
-        logout.grid(row = 2, column = 1)
+        logout.grid(row = 1, column = 3)
       
 
 

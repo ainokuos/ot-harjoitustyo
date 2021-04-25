@@ -44,6 +44,15 @@ class TrackerService:
     
     def get_notes(self):
         return note_repository.find_all()
+
+    def get_sum(self):
+        notes = self.get_notes()
+        points = 0
+        for note in notes:
+            points += note.cr
+        return points
+            
+
     
     def delete_notes(self):
         note_repository.delete_all()
