@@ -55,12 +55,13 @@ class NoteRepository:
     
     def delete_one(self, note):
         notes = self.find_all()
-        for i in range(0, len(notes)):
-            if note.name == notes[i].name and note.username == notes[i].username:
-                notes.pop(i)
+        for i in notes:
+            if note.name == i.name and note.username == i.username:
+                notes.remove(i)
         
-        self._write(notes)
-                
+                self._write(notes)
+                break
+                                    
 
         
       

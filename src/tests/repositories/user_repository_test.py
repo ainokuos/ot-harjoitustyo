@@ -13,4 +13,4 @@ class TestUserRepository(unittest.TestCase):
 		users = user_repository.find_all()
 
 		self.assertEqual(len(users), 1)
-
+	
