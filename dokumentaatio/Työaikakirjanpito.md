@@ -5,7 +5,7 @@
 29.3.|1|Määrittelydokumentti
 8.4.|1|TkInterin harjoittelu
 9.4.|1|TkInterin harjoittelu
- |3|Käyttöliittymän alustava toteutus
+9.4.|3|Käyttöliittymän alustava toteutus
 10.4.|2|Tutustuminen tietokannan hyödyntämiseen
 11.4.|2|Tallennus tietokantaan
 12.4.|4|Tallennus tietokantaan
