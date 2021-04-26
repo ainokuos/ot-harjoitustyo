@@ -1,8 +1,8 @@
 # **OT-Harjoitustyö**
 ## Opintoseuraaja
 Sovelluksen avulla käyttäjällä on mahdollista pitää kirjaa omista opinto suorituksistaan sekä opintomenestyksestä. 
-# Viimeisin versio
-[Opintoseuraaja]
+### Viimeisin versio
+[Opintoseuraaja](https://github.com/ainokuos/ot-harjoitustyo/releases/tag/viikko5)
 
 ## Dokumentaatio
 
