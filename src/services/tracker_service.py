@@ -33,8 +33,7 @@ class TrackerService:
 
         if existing_user:
             return False
-
-        user = self._user_repository.create(User(username, password))
+        self._user_repository.create(User(username, password))
 
         return True
 
@@ -68,9 +67,6 @@ class TrackerService:
     def delete_note(self, note):
         note_repository.delete_one(note)
         
-
-
-    
     def delete_notes(self):
         note_repository.delete_all()
         

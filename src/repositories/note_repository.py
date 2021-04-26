@@ -12,7 +12,6 @@ class NoteRepository:
 
     def _read(self):
         notes = []
-
         self._ensure_file_exists()
 
         with open(self._file_path) as file:
@@ -26,7 +25,6 @@ class NoteRepository:
 
                 notes.append(Note(name,cr,grade, username))
 
-    
         return notes
                 
     def _write(self, notes):
@@ -58,12 +56,7 @@ class NoteRepository:
         for i in notes:
             if note.name == i.name and note.username == i.username:
                 notes.remove(i)
-        
                 self._write(notes)
                 break
-                                    
-
-        
-      
 
 note_repository = NoteRepository(NOTES_FILE_PATH)

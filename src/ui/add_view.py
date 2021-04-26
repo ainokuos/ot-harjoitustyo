@@ -29,10 +29,13 @@ class AddView:
         grade = self._grade_entry.get()
 
         try:
-            int(credit)
-            int(grade)
-            tracker_service.create_note(name, credit, grade)
-            self._handle_user()
+            if int(credit) <=0 or int(grade)<=0:
+                self._show_error("Anna opintopisteet ja arvosana")
+            if int(grade)>5:
+                self._show_error("Anna arvosana väliltä 1-5")
+            elif int(credit)>0 and 0<int(grade)<=5:
+                tracker_service.create_note(name, credit, grade)
+                self._handle_user()
 
         except ValueError:
             self._show_error("Anna opintopisteet ja arvosana numerona")
