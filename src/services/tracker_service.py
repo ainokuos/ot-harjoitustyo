@@ -42,7 +42,8 @@ class TrackerService:
         note_repository.create(note)
     
     def get_notes(self):
-        return note_repository.find_all()
+        notes = note_repository.find_all()
+        return [note for note in notes if note.username == self.user.username]
 
     def get_sum(self):
         notes = self.get_notes()
