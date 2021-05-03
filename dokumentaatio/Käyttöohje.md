@@ -17,4 +17,7 @@ Etusivulla voit nyt kirjautua sisään.
 4. Syötä arvosana väliltä 1-5 kohtaan `Arvosana`
 
 ## Suorituksen poistaminen
-Voit poistaa suorituksen palaamalla suorituksen lisäämiseen ja valitsemalla `Poista` haluamasi kussin kohdalta
+- Voit poistaa suorituksen palaamalla suorituksen lisäämiseen ja valitsemalla `Poista` haluamasi kussin kohdalta
+- Voit myös poistua tekemättä muutoksia valitsemalla `Palaa`
+## Ulos kirjautuminen
+Voit kirjautua ulos käyttäjältä valitsemalla `Kirjaudu ulos` Tervetuloa-näkymästä
