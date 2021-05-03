@@ -1,12 +1,9 @@
 # Käyttöohje
 ## Käyttäjän luominen
 Käyttäessäsi sovellusta ensimmäistä kertaa tulee sinun luoda käyttäjä ennen, kuin voit kirjautua sisään.
-Valitse:`Luo tunnus`
+1. Valitse: `Luo tunnus`
 
-Syötä haluamasi käyttäjätunnus ja salasana ja valitse:
-```
-Luo
-```
+2. Syötä haluamasi käyttäjätunnus ja salasana ja valitse: `Luo`
 
 ## Kirjautuminen
 Käyttäjän luomisen jälkeen voit nyt kirjautua antamalla etsivulla käyttäjänimesi ja salasanasi ja painamalla "Kirjaudu"
