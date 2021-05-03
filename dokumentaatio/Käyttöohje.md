@@ -15,6 +15,7 @@ Etusivulla voit nyt kirjautua sisään.
 2. Syötä haluamasi nimi kohtaan `Kurssin nimi`
 3. Syötä opintopisteet positiivisena kokonaislukuna kohtaan `Opintopisteet`
 4. Syötä arvosana väliltä 1-5 kohtaan `Arvosana`
+5. Valitse: `Lisää`
 
 ## Suorituksen poistaminen
 - Voit poistaa suorituksen palaamalla suorituksen lisäämiseen ja valitsemalla `Poista` haluamasi kussin kohdalta
