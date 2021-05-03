@@ -6,10 +6,15 @@ Käyttäessäsi sovellusta ensimmäistä kertaa tulee sinun luoda käyttäjä en
 2. Syötä haluamasi käyttäjätunnus ja salasana ja valitse: `Luo`
 
 ## Kirjautuminen
-Käyttäjän luomisen jälkeen voit nyt kirjautua antamalla etsivulla käyttäjänimesi ja salasanasi ja painamalla "Kirjaudu"
+Etusivulla voit nyt kirjautua sisään.
+1. Syötä käyttäjätunnus ja salasana
+2. Valitse: `Kirjaudu`
 
 ## Suorituksen lisääminen
-Uuden suorituksen saat lisättyä painamalla "Lisää", jonka jälkeen avautuu lisäysnäkymä. Nyt voit syöttää suortuksen nimen sekä opintopisteet positiivisena kokonaislukuna ja arvosanan kokonaislukuna väliltä 1-5
+1. Valitse: `Lisää suoritus`
+2. Syötä haluamasi nimi kohtaan `Kurssin nimi`
+3. Syötä opintopisteet positiivisena kokonaislukuna kohtaan `Opintopisteet`
+4. Syötä arvosana väliltä 1-5 kohtaan `Arvosana`
 
 ## Suorituksen poistaminen
-Voit poistaa haluamasi suorituksen menemällä takaisin lisää sivulle ja valitsemalla suorituksen vieressä olevasta "Poista"-painikkeesta
+Voit poistaa suorituksen palaamalla suorituksen lisäämiseen ja valitsemalla `Poista` haluamasi kussin kohdalta
