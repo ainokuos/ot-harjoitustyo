@@ -5,7 +5,9 @@ Rakenne noudattaa kerrosarkkitehtuuria
 
 Hakemisto `repositories` vastaa tiedon tallennuksesta tietokantaan sekä csv-tiedostoihin, `services` vastaa sovelluslogiikasta ja `ui` käyttöliittymästä. Hakemisto `entities` sisältää luokkia ohjelman muuttujille.
 ## Tietojen tallennus
-Hakemiston `repositories` luokat vastaavat tietojen tallentamisesta. Luokka`UserRepository` tallentaa käyttäjätunnuksiin liittyvän datan SQLite-tietokantaan. Tietokannassa on taulu `users`, johon tunnus tallennetaan käyttäjätunnus|salasana pareina. Luokka `CsvRepository` vastaa csv-tiedostojen perustoiminnallisuuksiasta, kuten tiedoston luomisesta ja tyhjentämisestä. Luokat `NoteRepositor` ja `CourseRepository` tallentavat tiedon kurssisuorituksista ja muistiinpanoista omiin csv-tiedostoihinsa käyttäen `CsvRepository`-luokkaa 
+Hakemiston `repositories` luokat vastaavat tietojen tallentamisesta. Luokka`UserRepository` tallentaa käyttäjätunnuksiin liittyvän datan SQLite-tietokantaan. Tietokannassa on taulu `users`, johon tunnus tallennetaan käyttäjätunnus|salasana pareina. Luokka `CsvRepository` vastaa csv-tiedostojen perustoiminnallisuuksiasta, kuten tiedoston luomisesta ja tyhjentämisestä. Luokat `NoteRepository` ja `CourseRepository` tallentavat tiedon kurssisuorituksista ja muistiinpanoista omiin csv-tiedostoihinsa hyödyntäen `CsvRepository`-luokkaa 
+## Sovelluslogiikka
+Sovelluslogiikasta vastaa luokka `TrackerService`. 
 ## Toiminnallisuudet
 ### Kirjautuminen
 Kirjautumisnäkymän kenttiin syötetään käyttäjätunnus ja salasana, jonka jälkeen "Kirjaudu"-painike käynniostää tapahtumankäsittelijän.
