@@ -8,6 +8,28 @@ Hakemisto `repositories` vastaa tiedon tallennuksesta tietokantaan sekä csv-tie
 Hakemiston `repositories` luokat vastaavat tietojen tallentamisesta. Luokka`UserRepository` tallentaa käyttäjätunnuksiin liittyvän datan SQLite-tietokantaan. Tietokannassa on taulu `users`, johon tunnus tallennetaan käyttäjätunnus|salasana pareina. Luokka `CsvRepository` vastaa csv-tiedostojen perustoiminnallisuuksiasta, kuten tiedoston luomisesta ja tyhjentämisestä. Luokat `NoteRepository` ja `CourseRepository` tallentavat tiedon kurssisuorituksista ja muistiinpanoista omiin csv-tiedostoihinsa hyödyntäen `CsvRepository`-luokkaa 
 ## Sovelluslogiikka
 Sovelluslogiikasta vastaa luokka `TrackerService`. 
+Luokan metodeja ovat esimerkiksi seuraavat:
+- Käyttäjän kirjautuminen:
+  - `login(username, password)`, `logout`
+- Uusien User-, Note- ja Course-olioiden luominen:
+  - `create_user`, `create_note`, `create_course`
+- Tietojen hakeminen:
+  - `get_users`, `get_notes`, `get_courses`
+- Tietojen poistaminen:
+  - `delete_note`, `delete_course`
+ 
+Luokka vastaa tiedon välittämisestä käyttöliittymän ja tallennuksen välillä.
+## Käyttöliittymä
+
+Käyttöliittymä sisältää viisi erillistä näkymää:
+
+- Kirjautuminen
+- Käyttäjän luominen
+- Lista lisätyistä suorituksista ja muistiinpanoista
+- Suorituksen lisäys ja poisto
+- Muistiinpanon lisäys ja poisto
+
+Näkymät ovat erillisiä luokkia, joiden väliset yhteydet on toteutettu UI-luokkana. Näkymät kutsuvat TrackerServicen metodeja.
 ## Toiminnallisuudet
 ### Kirjautuminen
 Kirjautumisnäkymän kenttiin syötetään käyttäjätunnus ja salasana, jonka jälkeen "Kirjaudu"-painike käynniostää tapahtumankäsittelijän.
