@@ -17,6 +17,7 @@ Luokan metodeja ovat esimerkiksi seuraavat:
   - `get_users`, `get_notes`, `get_courses`
 - Tietojen poistaminen:
   - `delete_note`, `delete_course`
+ Luokka vastaa tiedon välittämisestä käyttöliittymän ja tallennuksen välillä.
 
 ## Toiminnallisuudet
 ### Kirjautuminen
