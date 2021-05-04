@@ -9,19 +9,16 @@ class CourseRepository:
         self.csv_repository = CsvRepository(self._file_path)
 
     def _read(self):
+        rows = self.csv_repository.read()
         courses = []
-        self.csv_repository.ensure_file_exists()
-
-        with open(self._file_path) as file:
-            for row in file:
-                row = row.replace("\n", "")
-                parts = row.split(";")
-                name = parts[0]
-                cr = parts[1]
-                grade = parts[2]
-                username = parts[3]
-                courses.append(Course(name,cr,grade, username))
-            return courses
+        for row in rows:
+            parts = row.split(";")
+            name = parts[0]
+            cr = parts[1]
+            grade = parts[2]
+            username = parts[3]
+            courses.append(Course(name,cr,grade, username))
+        return courses
 
     def _write(self, courses):
         self.csv_repository.ensure_file_exists()
