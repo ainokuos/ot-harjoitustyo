@@ -21,5 +21,5 @@
 25.4.|1|Käyttöliittymän laajennus
 26.4.|2|Virheilmoitukset ja arkkitehtuurikuvaus
 3.5.|1|Docstring ja dokumentaatio
-4.5.|5|Muistiinpano-ominaisuus
-yht:|40|
+4.5.|3|Muistiinpano-ominaisuus
+yht:|38|
