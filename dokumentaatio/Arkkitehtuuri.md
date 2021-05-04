@@ -19,6 +19,15 @@ Luokan metodeja ovat esimerkiksi seuraavat:
   - `delete_note`, `delete_course`
  
 Luokka vastaa tiedon välittämisestä käyttöliittymän ja tallennuksen välillä.
+## Käyttöliittymä
+
+Käyttöliittymä sisältää viisi erillistä näkymää:
+
+- Kirjautuminen
+- Käyttäjän luominen
+- Lista lisätyistä suorituksista ja muistiinpanoista
+- Suorituksen lisäys ja poisto
+- Muistiinpanon lisäys ja poisto
 
 ## Toiminnallisuudet
 ### Kirjautuminen
