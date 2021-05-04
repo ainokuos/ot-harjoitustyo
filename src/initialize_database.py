@@ -23,6 +23,7 @@ def initialize_database():
     connection = get_database_connection()
 
     drop_tables(connection)
+    tracker_service.delete_courses()
     tracker_service.delete_notes()
     create_tables(connection)
 

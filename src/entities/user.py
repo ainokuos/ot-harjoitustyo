@@ -13,6 +13,6 @@ class User:
             username: Merkkijono, joka kuvaa käyttäjän tunnusta
             password: Merkkijono, joka kuvaa käyttäjän salasanaa
         """
-        
+
         self.username = username
         self.password = password

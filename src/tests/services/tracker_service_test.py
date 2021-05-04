@@ -1,5 +1,5 @@
 import unittest
-from entities.note import Note
+from entities.course import Course
 from entities.user import User
 from services.tracker_service import tracker_service
 

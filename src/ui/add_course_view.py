@@ -1,7 +1,7 @@
 from tkinter import ttk, constants, StringVar
 from services.tracker_service import tracker_service
 
-class AddView:
+class AddCourseView:
 
     def __init__(self, root, handle_user):
         self._root = root
@@ -23,7 +23,7 @@ class AddView:
     def destroy(self):
         self._frame.destroy()
     
-    def _add_note_handler(self):
+    def _add_course_handler(self):
         name = self._name_entry.get()
         credit = self._credits_entry.get()
         grade = self._grade_entry.get()
@@ -34,28 +34,28 @@ class AddView:
             if int(grade)>5:
                 self._show_error("Anna arvosana väliltä 1-5")
             elif int(credit)>0 and 0<int(grade)<=5:
-                tracker_service.create_note(name, credit, grade)
+                tracker_service.create_course(name, credit, grade)
                 self._handle_user()
 
         except ValueError:
             self._show_error("Anna opintopisteet ja arvosana numerona")
     
-    def _initialize_notes(self):
-        notes = tracker_service.get_notes()
+    def _initialize_courses(self):
+        courses = tracker_service.get_courses()
         r = 5
-        for note in notes:
-            self._initialize_note(note, r)
+        for course in courses:
+            self._initialize_course(course, r)
             r += 1
     
-    def _initialize_note(self,note, r):
-        note_name = ttk.Label(master = self._frame, text = note.name)
-        note_delete = ttk.Button(master = self._frame, text = "Poista", command = lambda: self._handle_delete(note))
+    def _initialize_course(self,course, r):
+        course_name = ttk.Label(master = self._frame, text = course.name)
+        course_delete = ttk.Button(master = self._frame, text = "Poista", command = lambda: self._handle_delete(course))
 
-        note_name.grid(row = r, column = 0)
-        note_delete.grid(row = r, column = 1)
+        course_name.grid(row = r, column = 0)
+        course_delete.grid(row = r, column = 1)
     
-    def _handle_delete(self, note):
-        tracker_service.delete_note(note)
+    def _handle_delete(self, course):
+        tracker_service.delete_course(course)
         self._handle_user()
 
         
@@ -92,7 +92,7 @@ class AddView:
         label = ttk.Label(master = self._frame, text = "Merkitse suoritus")
 
         goback_button = ttk.Button(master = self._frame, text = "Palaa", command = self._handle_user)
-        add_button = ttk.Button(master = self._frame, text = "Lisää", command = self._add_note_handler)
+        add_button = ttk.Button(master = self._frame, text = "Lisää", command = self._add_course_handler)
 
         self._error_variable = StringVar(self._frame)
         self._error_label = ttk.Label(master = self._frame, textvariable = self._error_variable)
@@ -104,6 +104,6 @@ class AddView:
         self._error_label.grid(row = 4, column = 2)
 
         self._initialize_add_fields()
-        self._initialize_notes()
+        self._initialize_courses()
         self._hide_error()
 
