@@ -9,10 +9,14 @@ Hakemiston `repositories` luokat vastaavat tietojen tallentamisesta. Luokka`User
 ## Sovelluslogiikka
 Sovelluslogiikasta vastaa luokka `TrackerService`. 
 Luokan metodeja ovat esimerkiksi seuraavat:
-- `login(username, password)`, `logout`
-- `create_user`, `create_note`, `create_course`
-- `get_users`, `get_notes`, `get_courses`
-- `delete_note`, `delete_course`
+- Käyttäjän kirjautuminen:
+  - `login(username, password)`, `logout`
+- Uusien User-, Note- ja Course-olioiden luominen:
+  - `create_user`, `create_note`, `create_course`
+- Tietojen hakeminen:
+  - `get_users`, `get_notes`, `get_courses`
+- Tietojen poistaminen:
+  - `delete_note`, `delete_course`
 
 ## Toiminnallisuudet
 ### Kirjautuminen
