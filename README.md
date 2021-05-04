@@ -11,6 +11,8 @@ Sovelluksen avulla käyttäjällä on mahdollista pitää kirjaa omista opinto s
 [Työaikakirjanpito](https://github.com/ainokuos/ot-harjoitustyo/blob/master/dokumentaatio/Työaikakirjanpito.md)
 
 [Arkkitehtuuri](https://github.com/ainokuos/ot-harjoitustyo/blob/master/dokumentaatio/Arkkitehtuuri.md)
+ 
+ [Käyttöohje](https://github.com/ainokuos/ot-harjoitustyo/blob/master/dokumentaatio/Käyttöohje.md)
 
 ## Asennus
 
