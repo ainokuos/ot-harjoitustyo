@@ -13,3 +13,5 @@ data/database.sqlite
 data/notes.csv
 data/test_database.sqlite
 data/test_notes.csv
+data/courses.csv
+data/test_courses.csv

@@ -28,14 +28,18 @@ class UserView:
 
     def _initialize_notes(self):
         notes = tracker_service.get_notes()
+        notes_label = ttk.Label(master = self._frame, text = "Muistio")
+        notes_label.grid(row = self._row, column = 0)
         for note in notes:
-            self._initialize_note(note, self._row)
             self._row +=1
+            self._initialize_note(note, self._row)
     
     def _initialize_note(self, note, r):
         note_label = ttk.Label(master = self._frame, text = note.header)
+        note_message = ttk.Label(master = self._frame, text = note.message)
 
         note_label.grid(row = r, column = 0)
+        note_message.grid(row = r, column = 1)
         
 
     def _initialize_course(self, course, r):

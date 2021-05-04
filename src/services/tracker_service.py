@@ -126,17 +126,30 @@ class TrackerService:
         course_repository.delete_all()
 
     def create_note(self, header, message):
+        """ Luo uuden muistiinapnon.
+
+            Args:
+                header: Merkkijono, joka kuvaa muistiinpanon otsikkoa
+                message: Merkkijono, joka kuvaa muistiinpanon sisältöä
+        """
         note = Note(header, message, self.user.username)
         note_repository.create(note)
 
     def get_notes(self):
+        """ Hakee kaikki muistiinpanot.
+
+            Returns:
+                kaikki käyttäjän lisäämät muistiinpanot listana
+        """
         notes = note_repository.find_all()
         return [note for note in notes if note.username == self.user.username]
 
     def delete_notes(self):
+        """ Poistaa kaikki muistiinpanot. """
         note_repository.delete_all()
     
     def delete_note(self, note):
+        """ Poistaa yksittäisen muistiinpanon. """
         note_repository.delete_one(note)
 
 tracker_service = TrackerService()
