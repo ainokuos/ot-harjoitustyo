@@ -20,5 +20,6 @@
 24.4.|2|Testaus
 25.4.|1|Käyttöliittymän laajennus
 26.4.|2|Virheilmoitukset ja arkkitehtuurikuvaus
-3.5|1|Docstring ja dokumentaatio
-yht:|35|
+3.5.|1|Docstring ja dokumentaatio
+4.5.|5|Muistiinpano-ominaisuus
+yht:|40|
