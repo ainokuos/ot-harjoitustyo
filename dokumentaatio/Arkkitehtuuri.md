@@ -28,7 +28,7 @@ Käyttöliittymä sisältää viisi erillistä näkymää:
 - Lista lisätyistä suorituksista ja muistiinpanoista
 - Suorituksen lisäys ja poisto
 - Muistiinpanon lisäys ja poisto
-
+Näkymät ovat erillisiä luokkia, joiden väliset yhteydet on toteutettu UI-luokkana. Näkymät kutsuvat TrackerServicen metodeja.
 ## Toiminnallisuudet
 ### Kirjautuminen
 Kirjautumisnäkymän kenttiin syötetään käyttäjätunnus ja salasana, jonka jälkeen "Kirjaudu"-painike käynniostää tapahtumankäsittelijän.
