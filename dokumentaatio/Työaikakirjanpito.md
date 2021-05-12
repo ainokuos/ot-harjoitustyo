@@ -22,4 +22,5 @@
 26.4.|2|Virheilmoitukset ja arkkitehtuurikuvaus
 3.5.|1|Docstring ja dokumentaatio
 4.5.|3|Muistiinpano-ominaisuus
-yht:|38|
+12.5.|1|Dokumentaatio
+yht:|39|
