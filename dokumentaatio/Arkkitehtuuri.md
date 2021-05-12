@@ -5,9 +5,9 @@ Rakenne noudattaa kerrosarkkitehtuuria
 
 Hakemisto `repositories` vastaa tiedon tallennuksesta tietokantaan sekä csv-tiedostoihin, `services` vastaa sovelluslogiikasta ja `ui` käyttöliittymästä. Hakemisto `entities` sisältää luokkia ohjelman muuttujille.
 ## Tietojen tallennus
-Hakemiston `repositories` luokat vastaavat tietojen tallentamisesta. Luokka`UserRepository` tallentaa käyttäjätunnuksiin liittyvän datan SQLite-tietokantaan. Tietokannassa on taulu `users`, johon tunnus tallennetaan `käyttäjätunnus | salasana` pareina. Luokka `CsvRepository` vastaa csv-tiedostojen perustoiminnallisuuksiasta, kuten tiedoston luomisesta ja tyhjentämisestä. Luokat `NoteRepository` ja `CourseRepository` tallentavat tiedon kurssisuorituksista ja muistiinpanoista omiin csv-tiedostoihinsa hyödyntäen `CsvRepository`-luokkaa 
+Hakemiston `repositories` luokat vastaavat tietojen tallentamisesta. Luokka [UserRepository](../src/repositories/user_repository.py) tallentaa käyttäjätunnuksiin liittyvän datan SQLite-tietokantaan. Tietokannassa on taulu `users`, johon tunnus tallennetaan `käyttäjätunnus | salasana` pareina. Luokka [CsvRepository](../src/repositories_csv_repository.py) vastaa csv-tiedostojen perustoiminnallisuuksiasta, kuten tiedoston luomisesta ja tyhjentämisestä. Luokat [NoteRepository](../src/repositories/note_repository.py) ja [CourseRepository](../src/repositories/course_repository.py) tallentavat tiedon kurssisuorituksista ja muistiinpanoista omiin csv-tiedostoihinsa hyödyntäen [CsvRepository](../src/repositories_csv_repository.py) -luokkaa 
 ## Sovelluslogiikka
-Sovelluslogiikasta vastaa luokka `TrackerService`. 
+Sovelluslogiikasta vastaa luokka [TrackerService](../src/services/tracker_service.py). 
 Luokan metodeja ovat esimerkiksi seuraavat:
 - Käyttäjän kirjautuminen:
   - `login(username, password)`, `logout`
