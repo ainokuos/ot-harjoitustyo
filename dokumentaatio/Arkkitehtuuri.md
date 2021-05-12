@@ -36,4 +36,9 @@ Kirjautumisnäkymän kenttiin syötetään käyttäjätunnus ja salasana, jonka 
 
 ![Kirjautuminen](https://user-images.githubusercontent.com/80783887/115996379-a3db0380-a5e7-11eb-829f-104a34221397.png)
 
-Sovelluslogiikan "login" vaihe kutsuu käyttäjärepositiota, joka tarkastaa käyttäjätietokannasta, ovatko tunnus ja salasana oikein. 
+Sovelluslogiikan "login" metodi kutsuu käyttäjärepositiota, joka tarkastaa käyttäjätietokannasta, ovatko tunnus ja salasana oikein. 
+
+![Kurssisuoritukset lisääminen](https://user-images.githubusercontent.com/80783887/117972023-4955dd00-b333-11eb-9da7-a57786fc31ab.png)
+
+Sovelluslogiikan "create_course" metodi luo Course-olion ja kutsuu kurssireositoriota, joka tallentaa kurssin tiedot tiedostoon. Käyttöliittymä palaa takaisin aloitusnäkymään, jossa on lista lisätyistä kursseista. Käyttöliittymä nostaa virheilmoitukset, jos arvosana tai opintopisteet on annettu kirjaimin tai negatiivinen luku.
+
