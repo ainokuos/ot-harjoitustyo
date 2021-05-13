@@ -147,7 +147,7 @@ class TrackerService:
     def delete_notes(self):
         """ Poistaa kaikki muistiinpanot. """
         note_repository.delete_all()
-    
+
     def delete_note(self, note):
         """ Poistaa yksittäisen muistiinpanon. """
         note_repository.delete_one(note)

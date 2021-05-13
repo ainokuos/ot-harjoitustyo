@@ -71,7 +71,7 @@ class UserRepository:
         rows = cursor.fetchall()
 
         return list(map(get_user_by_row, rows))
-    
+
     def delete_all(self):
         """ Poistaa kaikki käyttäjät. """
         cursor = self._connection.cursor()

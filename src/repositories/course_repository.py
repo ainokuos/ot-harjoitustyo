@@ -54,7 +54,7 @@ class CourseRepository:
         """
         courses = self.find_all()
         courses.append(course)
-        self._write(courses) 
+        self._write(courses)
 
     def find_all(self):
         """ Hakee kaikki tallennetut suoritukset. """
@@ -76,4 +76,5 @@ class CourseRepository:
                 courses.remove(i)
                 self._write(courses)
                 break
+
 course_repository = CourseRepository(COURSES_FILE_PATH)

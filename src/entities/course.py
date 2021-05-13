@@ -17,9 +17,7 @@ class Course:
             grade: Numeroarvo, joka kuvaa suorituksen arvosanaa
             username: User-olio, joka kuvaa suorituksen lisännyttä käyttäjää
         """
-        
         self.name = name
         self.cr = cr
         self.grade = grade
         self.username = username
-

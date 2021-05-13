@@ -5,7 +5,7 @@ class Note:
             header: Kuvaa muistiinpanon aihetta
             message: Kuvaa muistiinpanon sisältöä
             username: Kuvaa muistiinpanon lisännyttä käyttäjää
-        """        
+        """
     def __init__(self, header, message, username):
         """ Luokan konstruktori, joka lisää uuden muistiinpanon:
 
