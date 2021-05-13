@@ -15,7 +15,9 @@ Edellinen:
 
 [Arkkitehtuuri](https://github.com/ainokuos/ot-harjoitustyo/blob/master/dokumentaatio/Arkkitehtuuri.md)
  
- [Käyttöohje](https://github.com/ainokuos/ot-harjoitustyo/blob/master/dokumentaatio/Käyttöohje.md)
+ 
+ [Testaus](https://github.com/ainokuos/ot-harjoitustyo/blob/master/dokumentaatio/Testaus.md)
+
 
 ## Asennus
 
