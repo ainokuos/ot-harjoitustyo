@@ -23,11 +23,11 @@ Luokka vastaa tiedon välittämisestä käyttöliittymän ja tallennuksen välil
 
 Käyttöliittymä sisältää viisi erillistä näkymää:
 
-- Kirjautuminen
-- Käyttäjän luominen
-- Lista lisätyistä suorituksista ja muistiinpanoista
-- Suorituksen lisäys ja poisto
-- Muistiinpanon lisäys ja poisto
+- [Kirjautuminen](../src/ui/login_view.py)
+- [Käyttäjän luominen](../src/ui/create_view.py)
+- [Tervetuloa-näkymä](../src/ui/user_view.py), jossa myös lista suorituksista ja muistiinpanoista
+- [Suorituksen lisäys ja poisto](../src/ui/add_course_view.py)
+- [Muistiinpanon lisäys ja poisto](../src/ui/add_note_view.py)
 
 Näkymät ovat erillisiä luokkia, joiden väliset yhteydet on toteutettu [UI](../src/ui/ui.py)-luokkana. Näkymät kutsuvat TrackerServicen metodeja.
 ## Toiminnallisuudet
