@@ -3,6 +3,7 @@
 Sovelluksen avulla käyttäjällä on mahdollista pitää kirjaa omista opinto suorituksistaan sekä opintomenestyksestä. 
 ### Viimeisin versio
 Edeltävät:
+
 [Viikko6](https://github.com/ainokuos/ot-harjoitustyo/releases/tag/viikko6)
 
 [Viikko5](https://github.com/ainokuos/ot-harjoitustyo/releases/tag/viikko5)
