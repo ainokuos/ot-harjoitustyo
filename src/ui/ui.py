@@ -5,11 +5,22 @@ from ui.add_note_view import AddNoteView
 from ui.create_view import CreateView
 
 class UI:
+    """ Luokka, joka vastaa käyttöliittymästä
+
+        Attributes:
+            root: juurikomponentti
+    """
     def __init__(self, root):
+        """ Luokan konstruktori, joka luo uuden näkymän
+
+            Args:
+                root: juurikomponentti
+        """
         self._root = root
         self._current_view = None
 
     def start(self):
+        """ Näyttää aloitusnäkymän. """       
         self._show_login_view()
 
 
@@ -30,6 +41,7 @@ class UI:
 
     def _handle_add_note(self):
         self._show_add_note_view()
+
     def _handle_create(self):
         self._show_create_view()
 

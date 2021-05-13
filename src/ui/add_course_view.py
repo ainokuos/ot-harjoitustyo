@@ -2,8 +2,20 @@ from tkinter import ttk, constants, StringVar
 from services.tracker_service import tracker_service
 
 class AddCourseView:
+    """ Luokka, joka vastaa kurssinlisäysnäkymästä.
+
+        Attributes:
+            root: juurikomponentti
+            handle_user: kutsu tervetuloa-näkymään
+    """
 
     def __init__(self, root, handle_user):
+        """ Luokan konstruktori, joka luo uuden kurssinlisäysnäkymän.
+
+            Args.
+                root: juurikomponentti
+                handle_user: kutsu tervetuloa-näkymään
+        """
         self._root = root
         self._handle_user = handle_user
         self._frame = None
@@ -18,9 +30,11 @@ class AddCourseView:
         self._initialize()
 
     def pack(self):
+        """ Asettelee näkymän. """
         self._frame.pack(fill = constants.X)
 
     def destroy(self):
+        """ Piilottaa näkymän. """
         self._frame.destroy()
     
     def _add_course_handler(self):

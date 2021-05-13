@@ -2,8 +2,23 @@ from tkinter import ttk, constants
 from services.tracker_service import tracker_service
 
 class UserView:
+    """ Luokka, joka vastaa tervetuloa-näkymästä
 
+        Attributes:
+            root: juurikomponentti
+            handle_login: kutsu kirjautumisnäkymään
+            handle_add_course: kutsu suorituksenlisäys näkymään
+            handle_add_note: kutsu muistiinpanon lisäämisen näkymään
+    """
     def __init__ (self, root, handle_login, handle_add_course, handle_add_note):
+        """ Luokan kjonstruktori, joka luo uuden tervetuloa-näkymän
+
+            Args:
+                root: juurikomponentti
+                handle_login: kutsu kirjautumisenäkymään
+                handle_add_course: kutsu kurssin lisäämisen näkymään
+                handle_add_note: kutsu muistiinpanon lisäämisen näkymään
+        """
         self._root = root
         self._handle_login = handle_login
         self._handle_add_course = handle_add_course
@@ -15,9 +30,11 @@ class UserView:
         self._initialize()
 
     def pack(self):
+        """ Asettelee näkymän """
         self._frame.pack(fill = constants.X)
 
     def destroy(self):
+        """ Piilottaa näkymän """
         self._frame.destroy()
     
     def _initialize_courses(self):

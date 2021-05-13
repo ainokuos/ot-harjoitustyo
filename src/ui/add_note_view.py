@@ -2,8 +2,19 @@ from tkinter import ttk, constants, StringVar
 from services.tracker_service import tracker_service
 
 class AddNoteView:
+    """ Luokka, joka vastaa muistiinpanon lisäämisen näkymästä.
 
+        Attributes:
+            root: juurikomponentti
+            handle_user: kutsu tervetuloa-näkymään
+    """
     def __init__(self, root, handle_user):
+        """ Luokan konstruktori, joka luo uuden muistiinpanonäkymän.
+
+            Args:
+                root: juurikomponentti
+                handle_user: kutsu tervetuloa-näkymään
+        """
         self._root = root
         self._handle_user = handle_user
         self._frame = None
@@ -18,9 +29,11 @@ class AddNoteView:
         self._initialize()
 
     def pack(self):
+        """ Asettelee näkymän. """
         self._frame.pack(fill = constants.X)
 
     def destroy(self):
+        """ Piilottaa näkymän. """
         self._frame.destroy()
     
     def _add_note_handler(self):

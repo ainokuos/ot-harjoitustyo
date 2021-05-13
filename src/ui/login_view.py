@@ -2,7 +2,21 @@ from tkinter import  ttk, constants, StringVar
 from services.tracker_service import tracker_service
 
 class LoginView:
+    """ Luokka, joka vastaa kirjautumisnäkymästä
+
+        Attributes:
+            root: juurikomponentti
+            handle_user: kutsu tervetuloa-näkymään
+            handle_create: kutsu käyttäjän luomisen näkymään
+    """
     def __init__ (self, root, handle_user, handle_create):
+        """ Luokan konstruktori, joka luo uuden kirjautumisnäkymän. 
+
+            Args:
+                root: juurikomponentti
+                handle_user: kutsu tervetuloa-näkymään
+                handle_create: kutsu käyttäjän luomisen näkymään
+        """
         self._root = root
         self._handle_user = handle_user
         self._handle_create = handle_create
@@ -16,9 +30,11 @@ class LoginView:
         self._initialize()
 
     def pack(self):
+        """ Asettelee näkymän """
         self._frame.pack(fill = constants.X)
 
     def destroy(self):
+        """ Piilottaa näkymän """
         self._frame.destroy()
 
     def _login_handler(self):
