@@ -23,10 +23,10 @@ class CourseRepository:
             Returns:
                 courses: lista tiedostoon tallennetuista suorituksista
         """
-        rows = self.csv_repository.read()
+        courses_list = self.csv_repository.read()
         courses = []
-        for row in rows:
-            parts = row.split(";")
+        for course in courses_list:
+            parts = course.split(";")
             name = parts[0]
             cr = parts[1]
             grade = parts[2]

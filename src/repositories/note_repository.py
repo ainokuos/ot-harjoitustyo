@@ -24,10 +24,10 @@ class NoteRepository:
             Returns:
                 tiedostossa olevat muistiinpanot listana
         """
-        rows = self.csv_repository.read()
+        notes_list = self.csv_repository.read()
         notes = []
-        for row in rows:
-            parts = row.split(";")
+        for note in notes_list:
+            parts = note.split(";")
             header = parts[0]
             message = parts[1]
             username = parts[2]
@@ -55,7 +55,7 @@ class NoteRepository:
         notes = self.find_all()
         notes.append(note)
         self._write(notes)
-        
+
 
     def find_all(self):
         """ Hakee kaikki muistiinpanot. """
