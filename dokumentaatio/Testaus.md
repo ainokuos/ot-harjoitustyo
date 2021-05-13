@@ -13,7 +13,7 @@ Luokasta `TrackerService` testataan käyttääjn luominen ja riippuvuus `UserRep
 ### Testikattavuusraportti
 Sovelluksen testauksen haarautumakattavuus on 81%.
 ![Testikattavuus](https://user-images.githubusercontent.com/80783887/118104193-7cf04000-b3e3-11eb-89d4-c9d65ea23fe1.png)
-Testaamattajäävät sovelluslogiikan riippuvuudet `NoteRepository` ja `CourseRepository` luokkien välillä.
+Testaamattajäävät sovelluslogiikan riippuvuudet `NoteRepository` ja `CourseRepository` luokkien välillä sekä näihin liittyviä metodeja.
 
 ### Järjestelmätestaus
 Käyttöliittymä on testattu manuaalisesti. Sovelluksen toiminta on testattu loogisilla virhetilanteilla, jotka nostavat virheilmoituksen käyttäjälle. 
