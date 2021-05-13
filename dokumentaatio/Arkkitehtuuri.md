@@ -40,5 +40,9 @@ Sovelluslogiikan "login" metodi kutsuu käyttäjärepositiota, joka tarkastaa k�
 
 ![Kurssisuoritukset lisääminen](https://user-images.githubusercontent.com/80783887/117972023-4955dd00-b333-11eb-9da7-a57786fc31ab.png)
 
-Sovelluslogiikan "create_course" metodi luo Course-olion ja kutsuu kurssireositoriota, joka tallentaa kurssin tiedot tiedostoon. Käyttöliittymä palaa takaisin aloitusnäkymään, jossa on lista lisätyistä kursseista. Käyttöliittymä nostaa virheilmoitukset, jos arvosana tai opintopisteet on annettu kirjaimin tai negatiivinen luku.
+Sovelluslogiikan "create_course" metodi luo Course-olion ja kutsuu kurssirepositoriota, joka tallentaa kurssin tiedot tiedostoon. Käyttöliittymä palaa takaisin aloitusnäkymään, jossa on lista lisätyistä kursseista. Käyttöliittymä nostaa virheilmoitukset, jos arvosana tai opintopisteet on annettu kirjaimin tai negatiivinen luku.
+
+![Muistiinpanon lisääminen](https://user-images.githubusercontent.com/80783887/118113883-867fa500-b3ef-11eb-8835-1b61c4bedfce.png)
+
+Sovelluslogiikan "create_note" metodi luo uuden Note-olion ja kutsuu muistiinpanorepositoriota, joka tallentaa muistiinpanon tiedostoon. Käyttöliittymä antaa virheilmoituksen, jos käyttäjä ei täytä kaikkia pyydettyjä tietoja.
 
