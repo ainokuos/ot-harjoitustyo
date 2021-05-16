@@ -66,16 +66,12 @@ class AddCourseView:
         course_delete = ttk.Button(master = self._frame, text = "Poista", command = lambda: self._handle_delete(course))
 
         course_name.grid(row = r, column = 0)
-        course_delete.grid(row = r, column = 1)
+        course_delete.grid(row = r, column = 3, pady = 3)
     
     def _handle_delete(self, course):
         tracker_service.delete_course(course)
         self._handle_user()
 
-        
-        
-        
-       
     def _initialize_add_fields(self):
         name_label = ttk.Label(master = self._frame, text = "Kurssin nimi")
         credits_label = ttk.Label(master = self._frame, text = "Opintopisteet")
@@ -103,17 +99,17 @@ class AddCourseView:
 
     def _initialize(self):
         self._frame = ttk.Frame(master = self._root)
-        label = ttk.Label(master = self._frame, text = "Merkitse suoritus")
+        label = ttk.Label(master = self._frame, text = "Merkitse suoritus", font = ("Arial", 16))
 
         goback_button = ttk.Button(master = self._frame, text = "Palaa", command = self._handle_user)
         add_button = ttk.Button(master = self._frame, text = "Lisää", command = self._add_course_handler)
 
         self._error_variable = StringVar(self._frame)
-        self._error_label = ttk.Label(master = self._frame, textvariable = self._error_variable)
+        self._error_label = ttk.Label(master = self._frame, textvariable = self._error_variable, foreground = "red")
 
         label.grid(row = 0, column = 0)
-        goback_button.grid(row = 4, column = 0)
-        add_button.grid(row = 4, column = 1)
+        goback_button.grid(row = 0, column = 3)
+        add_button.grid(row = 4, column = 0)
 
         self._error_label.grid(row = 4, column = 2)
 

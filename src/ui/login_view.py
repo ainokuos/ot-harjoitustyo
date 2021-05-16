@@ -71,7 +71,7 @@ class LoginView:
 
     def _initialize(self):
         self._frame = ttk.Frame(master = self._root)
-        label = ttk.Label(master = self._frame, text = "Kirjaudu sisään")
+        label = ttk.Label(master = self._frame, text = "Kirjaudu sisään", font = ("Arial", 16))
 
         self._initialize_fields()
 
@@ -80,12 +80,12 @@ class LoginView:
         create = ttk.Button(master = self._frame, text = "Luo tunnus", command = self._handle_create)
 
         self._error_variable = StringVar(self._frame)
-        self._error_label = ttk.Label(master = self._frame, textvariable = self._error_variable)
+        self._error_label = ttk.Label(master = self._frame, textvariable = self._error_variable, foreground = "red")
 
         label.grid(row = 0, column = 0)
 
 
-        login_button.grid(row = 3, column = 0)
-        create.grid(row = 4, column = 0)
+        login_button.grid(row = 3, column = 0, pady = 3)
+        create.grid(row = 3, column = 1, pady = 3)
 
         self._hide_error()

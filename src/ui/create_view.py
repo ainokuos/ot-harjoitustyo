@@ -74,12 +74,14 @@ class CreateView:
 
 
         create = ttk.Button(master = self._frame, text = "Luo", command = self._create_user_handler)
+        return_button = ttk.Button(master = self._frame, text = "Palaa", command = self._handle_login)
 
         self._error_variable = StringVar(self._frame)
-        self._error_label = ttk.Label(master = self._frame, textvariable = self._error_variable)
+        self._error_label = ttk.Label(master = self._frame, textvariable = self._error_variable, foreground = "red")
 
 
-        create.grid(row = 3, column = 0)
+        create.grid(row = 3, column = 1)
+        return_button.grid(row = 3, column = 0)
 
         self._error_label.grid(row = 4, column = 0)
 

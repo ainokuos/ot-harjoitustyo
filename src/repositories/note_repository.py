@@ -56,7 +56,6 @@ class NoteRepository:
         notes.append(note)
         self._write(notes)
 
-
     def find_all(self):
         """ Hakee kaikki muistiinpanot. """
         return self._read()
