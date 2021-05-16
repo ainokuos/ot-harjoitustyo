@@ -2,9 +2,10 @@
 ## Opintoseuraaja
 Sovelluksen avulla käyttäjällä on mahdollista pitää kirjaa omista opinto suorituksistaan sekä opintomenestyksestä. 
 ### Viimeisin versio
-[Opintoseuraaja](https://github.com/ainokuos/ot-harjoitustyo/releases/tag/viikko6)
+Edeltävät:
 
-Edellinen:
+[Viikko6](https://github.com/ainokuos/ot-harjoitustyo/releases/tag/viikko6)
+
 [Viikko5](https://github.com/ainokuos/ot-harjoitustyo/releases/tag/viikko5)
 
 ## Dokumentaatio
@@ -15,7 +16,9 @@ Edellinen:
 
 [Arkkitehtuuri](https://github.com/ainokuos/ot-harjoitustyo/blob/master/dokumentaatio/Arkkitehtuuri.md)
  
- [Käyttöohje](https://github.com/ainokuos/ot-harjoitustyo/blob/master/dokumentaatio/Käyttöohje.md)
+ 
+ [Testaus](https://github.com/ainokuos/ot-harjoitustyo/blob/master/dokumentaatio/Testaus.md)
+
 
 ## Asennus
 

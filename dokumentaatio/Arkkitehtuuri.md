@@ -23,11 +23,11 @@ Luokka vastaa tiedon välittämisestä käyttöliittymän ja tallennuksen välil
 
 Käyttöliittymä sisältää viisi erillistä näkymää:
 
-- Kirjautuminen
-- Käyttäjän luominen
-- Lista lisätyistä suorituksista ja muistiinpanoista
-- Suorituksen lisäys ja poisto
-- Muistiinpanon lisäys ja poisto
+- [Kirjautuminen](../src/ui/login_view.py)
+- [Käyttäjän luominen](../src/ui/create_view.py)
+- [Tervetuloa-näkymä](../src/ui/user_view.py), jossa myös lista suorituksista ja muistiinpanoista
+- [Suorituksen lisäys ja poisto](../src/ui/add_course_view.py)
+- [Muistiinpanon lisäys ja poisto](../src/ui/add_note_view.py)
 
 Näkymät ovat erillisiä luokkia, joiden väliset yhteydet on toteutettu [UI](../src/ui/ui.py)-luokkana. Näkymät kutsuvat TrackerServicen metodeja.
 ## Toiminnallisuudet
@@ -37,8 +37,12 @@ Kirjautumisnäkymän kenttiin syötetään käyttäjätunnus ja salasana, jonka 
 ![Kirjautuminen](https://user-images.githubusercontent.com/80783887/115996379-a3db0380-a5e7-11eb-829f-104a34221397.png)
 
 Sovelluslogiikan "login" metodi kutsuu käyttäjärepositiota, joka tarkastaa käyttäjätietokannasta, ovatko tunnus ja salasana oikein. 
-
+### Suorituksen lisääminen
 ![Kurssisuoritukset lisääminen](https://user-images.githubusercontent.com/80783887/117972023-4955dd00-b333-11eb-9da7-a57786fc31ab.png)
 
-Sovelluslogiikan "create_course" metodi luo Course-olion ja kutsuu kurssireositoriota, joka tallentaa kurssin tiedot tiedostoon. Käyttöliittymä palaa takaisin aloitusnäkymään, jossa on lista lisätyistä kursseista. Käyttöliittymä nostaa virheilmoitukset, jos arvosana tai opintopisteet on annettu kirjaimin tai negatiivinen luku.
+Sovelluslogiikan "create_course" metodi luo Course-olion ja kutsuu kurssirepositoriota, joka tallentaa kurssin tiedot tiedostoon. Käyttöliittymä palaa takaisin aloitusnäkymään, jossa on lista lisätyistä kursseista. Käyttöliittymä nostaa virheilmoitukset, jos arvosana tai opintopisteet on annettu kirjaimin tai negatiivinen luku.
+### Muistiinpanon lisääminen
+![Muistiinpanon lisääminen](https://user-images.githubusercontent.com/80783887/118113883-867fa500-b3ef-11eb-8835-1b61c4bedfce.png)
+
+Sovelluslogiikan "create_note" metodi luo uuden Note-olion ja kutsuu muistiinpanorepositoriota, joka tallentaa muistiinpanon tiedostoon. Käyttöliittymä antaa virheilmoituksen, jos käyttäjä ei täytä kaikkia pyydettyjä tietoja.
 

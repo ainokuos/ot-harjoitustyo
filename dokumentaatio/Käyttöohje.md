@@ -6,6 +6,7 @@ Käyttäessäsi sovellusta ensimmäistä kertaa tulee sinun luoda käyttäjä en
 1. Valitse: `Luo tunnus`
 
 2. Syötä haluamasi käyttäjätunnus ja salasana ja valitse: `Luo`
+- Voit palata takaisin valitsemalla `Palaa`
 
 ## Kirjautuminen
 Etusivulla voit nyt kirjautua sisään.
@@ -33,3 +34,4 @@ Etusivulla voit nyt kirjautua sisään.
 
 ## Muistiinpanon poistaminen
 - Voit poistaa muistiinpanon palaamalla muistiinpanon lisäämiseen ja valitsemalla `Poista` haluamasi muistiinpanon kohdalta
+- Voit palata takaisin valitsemalla `Palaa`
