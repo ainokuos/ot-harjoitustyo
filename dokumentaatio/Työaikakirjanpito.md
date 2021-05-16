@@ -23,4 +23,6 @@
 3.5.|1|Docstring ja dokumentaatio
 4.5.|3|Muistiinpano-ominaisuus
 12.5.|1|Dokumentaatio
-yht:|39|
+13.5.|1|Dokumentaatio
+16.5|3|Käyttöliittymä ja dokumentaatio
+yht:|43|
