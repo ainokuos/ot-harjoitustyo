@@ -21,7 +21,7 @@ Luokan metodeja ovat esimerkiksi seuraavat:
 - Tietojen poistaminen:
   - `delete_note`, `delete_course`
  
-Luokka vastaa tiedon välittämisestä käyttöliittymän ja tallennuksen välillä.
+Käyttöliittymä kutsuu luokan [TrackerService](../src/services/tracker_service.py)-metodeja, joka käsittelee hakemiston `repositories` luokkia, sekä palauttaa tiedon takaisin käyttöliittymään. 
 ## Käyttöliittymä
 
 Käyttöliittymä sisältää viisi erillistä näkymää:
