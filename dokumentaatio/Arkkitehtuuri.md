@@ -7,7 +7,10 @@ Hakemisto `repositories` vastaa tiedon tallennuksesta tietokantaan sekä csv-tie
 ## Tietojen tallennus
 Hakemiston `repositories` luokat vastaavat tietojen tallentamisesta. Luokka [UserRepository](../src/repositories/user_repository.py) tallentaa käyttäjätunnuksiin liittyvän datan SQLite-tietokantaan. Tietokannassa on taulu `users`, johon tunnus tallennetaan `käyttäjätunnus | salasana` pareina. Luokka [CsvRepository](../src/repositories/csv_repository.py) vastaa csv-tiedostojen perustoiminnallisuuksiasta, kuten tiedoston luomisesta ja tyhjentämisestä. Luokat [NoteRepository](../src/repositories/note_repository.py) ja [CourseRepository](../src/repositories/course_repository.py) tallentavat tiedon kurssisuorituksista ja muistiinpanoista omiin csv-tiedostoihinsa hyödyntäen [CsvRepository](../src/repositories/csv_repository.py) -luokkaa 
 ## Sovelluslogiikka
-Sovelluslogiikasta vastaa luokka [TrackerService](../src/services/tracker_service.py). 
+Loogisen tietomallin muodostavat luokat [User](../src/repositories/user_repository.py), [Note](../src/repositories/note_repository.py) ja [Course](../src/repositories/course_repository.py)
+![Entities](https://user-images.githubusercontent.com/80783887/118409704-7fc58c00-b694-11eb-915e-63cb86281fcd.png)
+
+Sovelluslogiikan toiminnallisuudesta vastaa luokka [TrackerService](../src/services/tracker_service.py). 
 Luokan metodeja ovat esimerkiksi seuraavat:
 - Käyttäjän kirjautuminen:
   - `login(username, password)`, `logout`
