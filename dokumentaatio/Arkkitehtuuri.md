@@ -1,6 +1,6 @@
 # Arkkitehtuurikuvaus
 ## Rakenne
-Rakenne noudattaa kerrosarkkitehtuuria
+Rakenne noudattaa kerrosarkkitehtuuria ja perustuu Repository-suunnittelumalliin.
 ![Arkkitehtuuri](https://user-images.githubusercontent.com/80783887/117005417-e8555600-acef-11eb-8dc1-76fc6185da9a.png)
 
 Hakemisto `repositories` vastaa tiedon tallennuksesta tietokantaan sekä csv-tiedostoihin, `services` vastaa sovelluslogiikasta ja `ui` käyttöliittymästä. Hakemisto `entities` sisältää luokkia ohjelman muuttujille.
